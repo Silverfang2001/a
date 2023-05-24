@@ -1,0 +1,16 @@
+import { KeyValue } from '@angular/common';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
+})
+export class ProfileComponent {
+  data = JSON.parse(localStorage.getItem('users')|| '[]')
+  datalen = this.data.length
+
+  displayusername = this.data.username
+  displaypassword = this.data.password
+  
+}

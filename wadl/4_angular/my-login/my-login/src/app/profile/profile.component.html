@@ -1,0 +1,14 @@
+<h1>Registered Users</h1>
+<br>
+<p>{{data}}</p>
+<div>
+
+    <select>
+        <option *ngFor="let option of data">
+            {{ option}}
+        </option>
+    </select>
+</div>
+<p>{{datalen}}</p>
+<p>Username : {{displayusername}}</p>
+<p>Password : {{displaypassword}}</p>
